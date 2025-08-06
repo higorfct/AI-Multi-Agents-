@@ -1,0 +1,7 @@
+apache-airflow==2.9.1
+langgraph
+llama-cpp-python
+pandas
+requests
+matplotlib
+python-dotenv

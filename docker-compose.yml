@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  airflow:
+    build: .
+    container_name: airflow
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./langgraph_agents:/opt/airflow/langgraph_agents
+      - ./reports:/opt/airflow/reports
+    environment:
+      - AIRFLOW__CORE__DAGS_FOLDER=/opt/airflow/dags
+      - AIRFLOW__CORE__EXECUTOR=SequentialExecutor
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
+    command: webserver
