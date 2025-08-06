@@ -18,7 +18,7 @@ O objetivo é **subsidiar decisões estratégicas de uma mineradora** com inform
    - Coleta automatizada dos indicadores após suas respectivas divulgações.
 
 2. **Análise com Agentes LangGraph + LLama**
-   - Cada indicador é analisado por um agente de IA com base em LLM local (LLama).
+   - Cada indicador é analisado por um agente especializado de IA com base em LLM local (LLama).
 
 3. **Geração de Relatórios Automatizados**
    - Relatórios textuais são gerados com insights para tomada de decisão.
